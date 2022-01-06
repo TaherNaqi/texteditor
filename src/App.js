@@ -38,12 +38,13 @@ function App() {
   // console.log(styles[currentstyle]); for testing
   return (
     <div className="App">
+      <h1>Text Editor</h1>
       <div>
         <button className="button" onClick={() => setstyle("bolded")}>
           Bold
         </button>
         <button className="button" onClick={() => setstyle("underlined")}>
-          underline
+          Underline
         </button>
         <button className="button" onClick={() => setstyle("italiced")}>
           Italic
@@ -55,6 +56,7 @@ function App() {
         <button className="red-btn" onClick={() => setstyle("red")} />
         <button className="yellow-btn" onClick={() => setstyle("yellow")} />
         <button className="blue-btn" onClick={() => setstyle("blue")} />
+        <button className="purple-btn" onClick={() => setstyle("purple")} />
       </div>
     </div>
   );
