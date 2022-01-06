@@ -18,8 +18,8 @@ function App() {
       color: "red",
     },
 
-    yellow: {
-      color: "yellow",
+    orange: {
+      color: "orange",
     },
 
     blue: {
@@ -54,7 +54,7 @@ function App() {
       <div>
         <button className="green-btn" onClick={() => setstyle("green")} />
         <button className="red-btn" onClick={() => setstyle("red")} />
-        <button className="yellow-btn" onClick={() => setstyle("yellow")} />
+        <button className="orange-btn" onClick={() => setstyle("orange")} />
         <button className="blue-btn" onClick={() => setstyle("blue")} />
         <button className="purple-btn" onClick={() => setstyle("purple")} />
       </div>
