@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Textformat from "./Components/Textformat";
+import Textcolor from "./Components/Textcolor";
+import "./App.css";
 
 function App() {
+  const [styles, setstyle] = useState("");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Textformat setstyle={setstyle} />
+      <input style={{ styles }} placeholder="Enter text here" />
+      <Textcolor setstyle={setstyle} />
     </div>
   );
 }
-
 export default App;
