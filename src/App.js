@@ -35,8 +35,7 @@ function App() {
     },
   };
   const [currentstyle, setstyle] = useState("bolded");
-  // console.log(currentstyle);
-  console.log(styles[currentstyle]);
+  // console.log(styles[currentstyle]); for testing
   return (
     <div className="App">
       <div>
